@@ -1,0 +1,169 @@
+CodePen Home
+React Calculator
+Michael Jackson
+PRO
+Unfollow
+Love
+Settings
+Change View
+Sign Up
+Log In
+HTML
+  0 unsaved changes 
+HTML Options
+<div id="wrapper">
+  <div id="app"></div>
+</div>
+1
+<div id="wrapper">
+2
+  <div id="app"></div>
+3
+</div>
+CSS
+ 
+CSS Options
+1
+html {
+2
+  box-sizing: border-box;
+3
+}
+4
+*, *:before, *:after {
+5
+  box-sizing: inherit;
+6
+}
+7
+​
+8
+body {
+9
+  margin: 0;
+10
+  font: 100 14px 'Roboto';
+11
+}
+12
+​
+13
+button {
+14
+  display: block;
+15
+  background: none;
+16
+  border: none;
+17
+  padding: 0;
+18
+  font-family: inherit;
+19
+  user-select: none;
+20
+  cursor: pointer;
+21
+  outline: none;
+22
+  
+23
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+24
+}
+JS (Babel)
+  
+JS Options
+1
+const PointTarget = ReactPoint.PointTarget
+2
+​
+3
+class AutoScalingText extends React.Component {
+4
+  state = {
+5
+    scale: 1
+6
+  };
+7
+  
+8
+  componentDidUpdate() {
+9
+    const { scale } = this.state
+10
+    
+11
+    const node = this.node
+12
+    const parentNode = node.parentNode
+13
+    
+14
+    const availableWidth = parentNode.offsetWidth
+15
+    const actualWidth = node.offsetWidth
+16
+    const actualScale = availableWidth / actualWidth
+17
+    
+18
+    if (scale === actualScale)
+19
+      return
+20
+    
+21
+    if (actualScale < 1) {
+22
+      this.setState({ scale: actualScale })
+23
+    } else if (scale < 1) {
+24
+      this.setState({ scale: 1 })
+
+Console
+Assets
+Comments
+⌘
+Fork
+Embed
+Export
+Share
+
+
+
+Embed This Pen
+Close
+Theme:
+
+Dark
+Themes allow you to style Embedded Pens. PRO users can create and update themes anytime, changing the look of all Pens using that theme.
+
+Default State
+ Use click-to-load
+The result in embedded Pens can either load right away, or be in a preview state where they need to be clicked to loaded, which can be good for performance. Learn more.
+
+Editable State
+ Make code editable
+Editable Embeds are a PRO feature. They allow the code in embeds to be edited and the preview updated just like in the Editor.
+
+Preview Toggle tabs below to affect what shows by default.
+Jump down to get code
+HTML CSS BabelResult Skip Results Iframe
+EDIT ON
+<div id="wrapper">
+  <div id="app"></div>
+</div>
+
+Resources
+drag to resize
+Copy & Paste Code
+HTML (recommended)iframePrefill Embed WordPress Shortcode 
+<p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="html,result" data-user="mjijackson" data-slug-hash="xOzyGX" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="React Calculator">
+  <span>See the Pen <a href="https://codepen.io/mjijackson/pen/xOzyGX">
+  React Calculator</a> by Michael Jackson (<a href="https://codepen.io/mjijackson">@mjijackson</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
